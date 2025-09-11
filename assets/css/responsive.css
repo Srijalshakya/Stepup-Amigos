@@ -49,12 +49,12 @@
         bottom: -45px;
       }
     
-      .gif-body h2 {
+      .banner_section h2 {
         font-size: 48px;
       }
     
-      .gif-body h2 .learn,
-      .gif-body h2 .earn {
+      .banner_section h2 .learn,
+      .banner_section h2 .more {
         font-size: 48px;
       }
     
@@ -131,272 +131,322 @@
     }
 
 @media (max-width: 768px) {
-    .nav {
-        display: none;
-      }
-    
-      .menu {
-        display: block;
-      }
-    
-      .button {
-        gap: 10px;
-      }
-    
-      .btn,
-      .btn-primary {
-        padding: 8px 15px;
-        font-size: 14px;
-      }
-    
-      .content-wrapper {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-        align-items: center;
-        margin-bottom: 60px;
-      }
-    
-      .gif-body {
-        padding: 60px 0;
-        min-height: 100vh;
-      }
-    
-      .gif-body h2 {
-        font-size: 36px;
-      }
-    
-      .gif-body h2 .learn,
-      .gif-body h2 .earn {
-        font-size: 36px;
-      }
-    
-      .gif-body p {
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
-    
-      .gif1 {
-        width: 50px;
-        height: 50px;
-      }
-    
-      .gif2 {
-        width: 300px;
-        height: 300px;
-        bottom: -38px;
-      }
-        .video img {
-        padding: 20px;
-        border-radius: 35px;
-        width: fit-content;
-        height: 300px;
-        }
-
-        .content h2 {
-        font-family: var(--secondary-font);
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 40px;
-        color: #FFFF;
-        }
-        .content p {
-        font-family: var(--primary-font);
-        font-size: 16px;
-        font-weight: 400;
-        color: #FFFFFF;
-        max-width: 500px;
-        width: 100%;
-        margin: auto;
-        }
-
-        .ready-card-green{
-            margin-bottom: 70px;
-        }
-        .money-content h2 {
-            font-family: var(--secondary-font);
-            font-size: 38px;
-            font-weight: 600;
-            line-height: 35px;
-            color: #241E1E;
-        }
-        .money-content span {
-            font-family: var(--primary-font);
-            font-size: 20px;
-            font-weight: 400;
-            color: #241E1E;
-        }
-        .money-content p {
-            font-family: var(--primary-font);
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 15px;
-        }
-
-        .card img{
-            width: fit-content;
-            height: 200px;
-
-        }
-        
-        .content {
-        margin-top: 20px;
-    }
-        
-    }
-
-@media (max-width: 480px) {
-    .container {
-    padding: 0 15px;
-  }
-
-  .gif-body h2 {
-    font-size: 28px;
-  }
-
-  .gif-body h2 .learn,
-  .gif-body h2 .earn {
-    font-size: 28px;
-  }
-
-  .container-medium {
-    gap: 10px;
-  }
-
-  .logo img {
-    height: 50px;
-  }
-
-  .gif1 {
-    width: 40px;
-    height: 40px;
-  }
-
-  .gif2 {
-    width: 250px;
-    height: 250px;
-    bottom: -32px;
-  }
-
-  .gif-body {
-    padding: 40px 0;
-    min-height: 90vh;
-  }
-  .content h2 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  .content p {
-    font-size: 12px;
-    line-height: 1.2;
-  }
-
-  .content {
-    margin-top: 30px;
-  }
+.nav {
+display: none;
 }
 
-/* Responsive Design */
+.menu {
+display: block;
+}
+
+.button {
+gap: 10px;
+}
+
+.btn,
+.btn-primary {
+padding: 8px 15px;
+font-size: 14px;
+}
+
+.content-wrapper {
+flex-direction: column;
+text-align: center;
+gap: 20px;
+align-items: center;
+margin-bottom: 60px;
+}
+
+.banner_section {
+padding: 60px 0;
+min-height: 100vh;
+}
+
+.banner_section h2 {
+font-size: 36px;
+}
+
+.banner_section h2 .learn,
+.banner_section h2 .more {
+font-size: 36px;
+}
+
+.banner_sectionp {
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.gif1 {
+width: 50px;
+height: 50px;
+}
+
+.gif2 {
+width: 300px;
+height: 300px;
+bottom: -38px;
+}
+.video img {
+padding: 20px;
+border-radius: 35px;
+width: fit-content;
+height: 300px;
+}
+
+.content h2 {
+font-family: var(--secondary-font);
+font-size: 22px;
+font-weight: 600;
+line-height: 40px;
+color: #FFFF;
+}
+.content p {
+font-family: var(--primary-font);
+font-size: 16px;
+font-weight: 400;
+color: #FFFFFF;
+max-width: 500px;
+width: 100%;
+margin: auto;
+}
+
+.ready-card-green{
+margin-bottom: 70px;
+}
+.money-content h2 {
+font-family: var(--secondary-font);
+font-size: 38px;
+font-weight: 600;
+line-height: 35px;
+color: #241E1E;
+}
+.money-content span {
+font-family: var(--primary-font);
+font-size: 20px;
+font-weight: 400;
+color: #241E1E;
+}
+.money-content p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.card img{
+  width: fit-content;
+  height: 200px;
+
+}
+
+.content {
+  margin-top: 20px;
+}
+
+}
+
+@media (max-width: 480px) {
+.container {
+  padding: 0 15px;
+}
+
+.banner_section h2 {
+  font-size: 28px;
+}
+
+.banner_section h2 .learn,
+.banner_section h2 .more {
+  font-size: 28px;
+}
+
+.container-medium {
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.gif1 {
+  width: 40px;
+  height: 40px;
+}
+
+.gif2 {
+  width: 250px;
+  height: 250px;
+  bottom: -32px;
+}
+
+.banner_section {
+  padding: 40px 0;
+  min-height: 90vh;
+}
+.content h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.content p {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.content {
+  margin-top: 30px;
+}
+}
+
 @media (max-width: 968px) {
-  .banner-text h2 {
-    font-size: 36px;
-  }
+.head-content h2 {
+  font-size: 36px;
+}
 
-  .banner-text p {
-    font-size: 16px;
-  }
+.head-content p {
+  font-size: 16px;
+}
 
-  .banner-card h2 {
-    font-size: 36px;
-  }
+.steup-card h2 {
+  font-size: 36px;
+}
 
-  .card3 h2 {
-    font-size: 42px;
-  }
+.card3 h2 {
+  font-size: 42px;
+}
 
-  .card3 img[alt="reward-money"] {
-    width: 150px;
-    height: 120px;
-  }
+.card3 img[alt="reward-money"] {
+  width: 150px;
+  height: 120px;
+}
 }
 
 @media (max-width: 768px) {
-  .banner {
-    padding: 60px 0;
-  }
+.banner {
+  padding: 60px 0;
+}
 
-  .banner-text {
-    margin-bottom: 40px;
-  }
+.head-content {
+  margin-bottom: 40px;
+}
 
-  .banner-text h2 {
-    font-size: 28px;
-  }
+.head-content h2 {
+  font-size: 28px;
+}
 
-  /* Stack cards vertically on mobile */
-  .banner-card {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
+/* Stack cards vertically on mobile */
+.steup-card {
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
 
-  .card3 {
-    grid-column: 1;
-    flex-direction: column;
-    text-align: center;
-    min-height: auto;
-    gap: 20px;
-  }
+.card3 {
+  grid-column: 1;
+  flex-direction: column;
+  text-align: center;
+  min-height: auto;
+  gap: 20px;
+}
 
-  .banner-card > div {
-    padding: 20px;
-  }
+.steup-card  > div {
+  padding: 20px;
+}
 
-  .banner-card h2 {
-    font-size: 28px;
-  }
+.steup-card h2 {
+  font-size: 28px;
+}
 
-  .card3 h2 {
-    font-size: 32px;
-  }
+.card3 h2 {
+  font-size: 32px;
+}
 
-  .card3 img[alt="reward-money"] {
-    width: 120px;
-    height: 100px;
-  }
+.card3 img[alt="reward-money"] {
+  width: 120px;
+  height: 100px;
+}
 }
 
 @media (max-width: 480px) {
-  .banner {
-    padding: 40px 0;
-  }
-
-  .banner .container {
-    padding: 0 15px;
-  }
-
-  .banner-text h2 {
-    font-size: 24px;
-  }
-
-  .banner-text p {
-    font-size: 14px;
-  }
-
-  .banner-card h2 {
-    font-size: 24px;
-  }
-
-  .card3 h2 {
-    font-size: 28px;
-  }
-
-  .banner-card > div {
-    padding: 15px;
-  }
-
-  .card3 img[alt="reward-money"] {
-    width: 100px;
-    height: 80px;
-  }
+.join-stepup {
+  padding: 40px 0;
 }
+
+.join-stepup .container {
+  padding: 0 15px;
+}
+
+.head-content h2 {
+  font-size: 24px;
+}
+
+.head-content p {
+  font-size: 14px;
+}
+
+.steup-card h2 {
+  font-size: 24px;
+}
+
+.card3 h2 {
+  font-size: 28px;
+}
+
+.steup-card > div {
+  padding: 15px;
+}
+
+.card3 img[alt="reward-money"] {
+  width: 100px;
+  height: 80px;
+}
+}
+
+@media (max-width: 789px) {
+.we-accept {
+   margin-top: -100px; 
+  }
+
+.we-accept h3 {
+  font-size: 24px; 
+  line-height: 40px;
+}
+
+.payment-badges {
+  width: 80%; 
+  gap: 15px; 
+  padding: 15px 20px;
+}
+.money{
+  width: 200px;
+}
+
+.footer-bottom {
+  flex-direction: column; 
+  gap: 10px; 
+  text-align: center;
+}
+}
+@media (max-width: 480px) {
+.we-accept {
+  margin-top: -80px; 
+}
+
+.we-accept h3 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.money{
+  width: 180px;
+}
+
+.payment-badges {
+  width: 90%; 
+}
+
+
+
+.footer-bottom {
+  font-size: 12px; 
+}
+}
+

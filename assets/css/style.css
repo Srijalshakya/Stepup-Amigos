@@ -182,7 +182,7 @@ a.btns:hover {
   height: 60px;
 }
 
-.gif-body {
+.banner_section {
   padding: 80px 0;
   background: linear-gradient(
     180deg,
@@ -197,7 +197,7 @@ a.btns:hover {
   justify-content: center;
 }
 
-.gif-body .container {
+.banner_section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,7 +224,7 @@ a.btns:hover {
     margin-top: 100px;   
 }
 
-.gif-body h2 {
+.banner_section h2 {
   font-family: var(--secondary-font);
   font-size: 64px;
   font-weight: 700;
@@ -234,19 +234,19 @@ a.btns:hover {
   text-align: center;
 }
 
-.gif-body h2 .learn {
+.banner_section h2 .learn {
   font-size: 64px;
   font-family: var(--secondary-font);
   color: #cf8f28;
 }
 
-.gif-body h2 .earn {
+.banner_section h2 .more {
   font-family: var(--secondary-font);
   font-size: 64px;
   color: #337c29;
 }
 
-.gif-body p {
+.banner_section p {
   font-family: var(--primary-font);
   font-size: 18px;
   line-height: 1.6;
@@ -305,6 +305,7 @@ a.btns:hover {
 .card-content h2 {
   font-family: var(--secondary-font);
   font-size: 48px;
+  line-height: 47px;
   font-weight: 600;
   color: #241e1e;
 }
@@ -319,6 +320,7 @@ a.btns:hover {
 .card-content p {
   font-family: var(--primary-font);
   font-size: 20px;
+  line-height: 27px;
   font-weight: 400;
   color: #241e1e;
 }
@@ -362,32 +364,34 @@ a.btns:hover {
   margin-bottom: 80px;
 }
 
-.banner {
+.join-stepup {
   background-color: #eff1d6;
   margin-top: 40px;
 }
 
-.banner-text {
+.head-content{
   padding: 20px;
 }
 
-.banner-text h2 {
+.head-content h2 {
   font-family: var(--secondary-font);
   font-size: 48px;
+  line-height: 48px;
   font-weight: 600;
   color: #241e1e;
   width: 400px;
 }
 
-.banner-text p {
+.head-content p {
   font-family: var(--primary-font);
   font-size: 20px;
+  line-height: 27px;
   font-weight: 400;
   color: #241e1e;
   width: 380px;
 }
 
-.banner-card {
+.steup-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -396,7 +400,7 @@ a.btns:hover {
 }
 
 /* Individual Card Styling */
-.banner-card > div {
+.steup-card > div {
   border-radius: 20px;
   padding: 30px;
   border: 2px solid #241e1e ;
@@ -436,7 +440,7 @@ a.btns:hover {
 }
 
 /* Card Icons */
-.banner-card img[alt*="icon"] {
+.steup-card img[alt*="icon"] {
   width: 40px;
   height: 40px;
   margin-bottom: 20px;
@@ -444,7 +448,7 @@ a.btns:hover {
 }
 
 /* Card Numbers */
-.banner-card h2 {
+.steup-card h2 {
   font-family: var(--secondary-font);
   font-size: 48px;
   font-weight: bold;
@@ -454,7 +458,7 @@ a.btns:hover {
 }
 
 /* Card Titles */
-.banner-card h3 {
+.steup-card h3 {
   font-family: var(--primary-font);
   font-size: 18px;
   font-weight: 600;
@@ -463,7 +467,7 @@ a.btns:hover {
 }
 
 
-.banner-card p {
+.steup-card p {
   font-family: var(--primary-font);
   font-size: 14px;
   color: #636e72;
@@ -503,7 +507,7 @@ a.btns:hover {
 } */
 
 
-.banner-card > div {
+.steup-card  > div {
   animation: fadeInUp 0.6s ease forwards;
 }
 
@@ -567,11 +571,11 @@ a.btns:hover {
     width: 89px;
 }
 
-.video-banner {
+.video-section {
   margin-top: 40px;
 }
 
-.video-banner .container {
+.video-section .container {
   background-color: #327d2a;
   display: flex;
 }
@@ -585,7 +589,7 @@ a.btns:hover {
 
 .text-content h2 {
   font-family: var(--secondary-font);
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 600;
   line-height: 72px;
   color: #241E1E;
@@ -596,12 +600,13 @@ a.btns:hover {
     font-size: 20px;
     font-weight: 400;
     color: #241E1E  ;
-    max-width: 500px;
+    max-width: 600px;
+    padding-bottom: 20px;
     width: 100%;
     margin: auto;
 }
 
-.money-section {
+.ready-to-steup {
   background-color: #eff1d6;
   margin-top: 40px;
 }
@@ -610,6 +615,10 @@ a.btns:hover {
   padding: 30px;
   text-align: center;
   justify-content: center;
+}
+
+.money{
+  margin-bottom: -4px;
 }
 
 .btns {
@@ -753,11 +762,6 @@ a.btns:hover {
 
 }
 
-.footer .container{
-    display: flex;
-    justify-content: space-between;
-}
-
 
 
 .we-accept-badges{
@@ -778,10 +782,15 @@ a.btns:hover {
 }
 
 .ready-card-green{
-  padding: 20px 0px 0 35px;
+  padding: 20px;
     background-color: #9EDF96;
     border-radius: 20px;
     height: 515px;
+}
+
+.ready-card-green img{
+  width: 100%;
+  height: 287px;
 }
 
 
@@ -791,18 +800,20 @@ a.btns:hover {
 }
 
 .ready-card-image img{
-      position: relative;
-    WIDTH: 100%;
+    position: relative;
+    width: 100%;
     height: 590px;
-    OBJECT-FIT: cover;
-    transform: translateY(-54px);
+    object-fit: cover;
+    transform: translateY(-40px);
     border-radius: 20px;
 }
-
+.card-bg{
+  background-color: rgba(239, 241, 214, 1);
+}
 
 .ready-card-pink{
   background-color: #FECEC1;
-  padding: 20px 0px 0 35px;
+  padding: 20px;
   border-radius: 20px;
   height: 515px;
 }
@@ -870,13 +881,13 @@ a.btns:hover {
 }
 
 .firstgrid_h3 {
-
+  color: #FFFFFF;
   margin: 20px 0;
 }
 
-.four-grid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px
 }
 
@@ -930,8 +941,9 @@ a.btns:hover {
 .contact-info span {
   font-family: var(--primary-font);
   font-size: 16px; 
-  color: #fff; 
+  color: rgba(255, 255, 255, 0.5) ;
   line-height: 1.2; 
+  padding: 5px 0;
 }
 
 .contact-info span strong {
@@ -952,6 +964,7 @@ a.btns:hover {
   font-family: var(--primary-font);
   font-size: 18px;
   font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .explore h3 {
@@ -960,8 +973,12 @@ a.btns:hover {
   color: #FFFFFF;
 }
 
+.explore >ul >li{
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .explore >ul >li a{
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-family: var(--primary-font);
   text-decoration: none;
 }
@@ -992,9 +1009,7 @@ a {
   cursor: pointer;
 }
 
-.mail{
-  padding: 15px 0;
-}
+
 .subscribe img {
   width: 100%;
   height: 334px;
@@ -1037,4 +1052,47 @@ footer li {
   margin-right: 5px;
 }
 
+.we-accept{
+  margin-top: -160px;
+}
+.we-accept h3{
+  text-align: center;
+  font-family: var(--secondary-font);
+  color: #FFF;
+  font-size: 28PX;
+  line-height: 48PX;
+  font-weight: 500;
+}
 
+.payment-badges{
+  display: flex;
+  background-color: #FFFFFF;
+  width: 40%;
+  gap: 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding:20px 25px ;
+}
+
+.dot-line{
+  border: 1px dashed #000;
+  margin: 0;
+}
+
+.vertical-line{
+  border: 1px dashed #FFF;
+  margin: 20px 0;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom span{
+  margin-bottom: 20px;
+  font-family: var(--primary-font);
+  font-size:18px ;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5)
+}
