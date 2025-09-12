@@ -299,7 +299,7 @@ a.btns:hover {
 
 .card-content {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .card-content h2 {
@@ -323,6 +323,7 @@ a.btns:hover {
   line-height: 27px;
   font-weight: 400;
   color: #241e1e;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -1095,4 +1096,302 @@ footer li {
   font-size:18px ;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5)
+}
+
+.footer-bottom span a{
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-size:18px ;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5)
+
+}
+
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: none; /* Hidden by default (desktop) */
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.burger-menu:hover {
+    background-color: #f8f9fa;
+}
+
+.burger-menu img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+/* Desktop Navigation */
+.nav-bar .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-bar .nav li a {
+    color: #000000; /* Updated to black for visibility */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nav-bar .nav li a:hover {
+    color: #007bff;
+}
+
+/* Mobile Navigation Styles */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 20px rgba(0,0,0,0.15);
+    z-index: 1001;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    left: 0;
+}
+
+.mobile-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.mobile-nav-header .logo img {
+    height: 35px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+    padding: 5px;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.mobile-nav .nav {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-nav .nav li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-nav .nav li:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav .nav li a {
+    display: block;
+    padding: 15px 25px;
+    color: #000000; /* Updated to black (#0000 is invalid; using #000000 for full black) */
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav .nav li a:hover {
+    color: #007bff !important; /* Ensure hover color overrides if needed */
+    background-color: #f8f9fa;
+    padding-left: 35px;
+}
+
+/* Overlay */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-bar .nav {
+        display: none; /* Hide desktop nav on mobile */
+    }
+
+    .burger-menu {
+        display: block !important; /* Force show on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-nav {
+        width: 100%;
+        left: -100%;
+    }
+
+    .mobile-nav.active {
+        left: 0;
+    }
+}
+
+/* Refined Mobile Nav UL/LI Styles */
+#mobileNav.active .nav {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    min-height: 300px;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    background-color: #fff; /* White background */
+    position: relative;
+    z-index: 1002;
+}
+
+#mobileNav.active .nav li {
+    display: block;
+    width: 100%;
+    min-height: 20px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee; /* Light border for separation */
+}
+
+#mobileNav.active .nav li:last-child {
+    border-bottom: none;
+}
+
+#mobileNav.active .nav li a {
+    display: block;
+    padding: 15px 25px;
+    color: #000000; /* Simple black text */
+    font-size: 16px;
+    font-weight: normal; /* Reset to normal weight */
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+#mobileNav.active .nav li a:hover {
+    color: #007bff; /* Blue hover color */
+    background-color: #f8f9fa; /* Light gray background on hover */
+    padding-left: 35px; /* Slight indent on hover */
+}
+
+/* Ensure the parent mobile-nav expands */
+#mobileNav.active {
+    left: 0;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+@media (max-width: 460px) {
+    /* Mobile Nav: Full Width Sliding for Small Screens */
+    .mobile-nav {
+        width: 100% !important; /* Full screen width at 460px and below */
+        max-width: 100% !important; /* Prevent exceeding screen */
+        left: -100% !important; /* Slide from right edge */
+        box-sizing: border-box !important; /* Include padding/borders in width */
+    }
+
+    .mobile-nav.active {
+        left: 0 !important;
+        max-width: 100% !important; /* Lock to screen width */
+    }
+
+    /* Adjust Header for Small Screens */
+    .mobile-nav-header {
+        padding: 15px !important; /* Reduced padding */
+        box-sizing: border-box !important; /* Include padding in layout */
+    }
+
+    .mobile-nav-header .logo img {
+        height: 28px !important; /* Smaller logo on very small screens */
+    }
+
+    .close-btn {
+        font-size: 24px !important; /* Slightly smaller close button */
+    }
+
+    /* Nav List Adjustments for Small Screens */
+    .mobile-nav .nav {
+        padding: 10px 0 !important; /* Less top/bottom padding */
+        box-sizing: border-box !important; /* Prevent padding from adding width */
+    }
+
+    .mobile-nav .nav li a {
+        padding: 12px 15px !important; /* Reduced side padding for full-width fit */
+        font-size: 15px !important; /* Slightly smaller font to fit */
+        box-sizing: border-box !important; /* Ensure padding doesn't expand */
+    }
+
+    .mobile-nav .nav li a:hover {
+        padding-left: 25px !important; /* Adjusted hover indent */
+    }
+
+    /* Prevent Overflow and Ensure Touch-Friendly */
+    .mobile-nav {
+        overflow-x: hidden !important; /* No horizontal scroll */
+        overflow-y: auto !important; /* Allow vertical scroll if content overflows */
+    }
+
+    /* Default Mobile Nav Width Above 460px */
+    .mobile-nav {
+        width: 280px !important; /* Default width */
+        max-width: 280px !important; /* Cap the width */
+        transition: left 0.3s ease !important; /* Smooth slide */
+    }
+
+    body {
+        margin: 0 !important; /* Reset body margins if needed */
+    }
+
+    /* Burger Menu Icon on Very Small Screens */
+    .burger-menu {
+        padding: 5px !important; /* Smaller touch target if needed */
+        box-sizing: border-box !important; /* Include padding in size */
+    }
+
+    .burger-menu img {
+        width: 20px !important;
+        height: 20px !important;
+    }
 }
