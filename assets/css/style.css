@@ -183,7 +183,7 @@ a.btns:hover {
 }
 
 .banner_section {
-  padding: 80px 0;
+  padding: 30px 0;
   background: linear-gradient(
     180deg,
     #eff1d6 0%,
@@ -217,7 +217,8 @@ a.btns:hover {
 }
 
 .text-content {
-    margin-top: 100px;   
+    margin-top: 50px;
+    margin-bottom: 80px;   
 }
 
 .content {
@@ -226,7 +227,7 @@ a.btns:hover {
 
 .banner_section h2 {
   font-family: var(--secondary-font);
-  font-size: 64px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -235,14 +236,14 @@ a.btns:hover {
 }
 
 .banner_section h2 .learn {
-  font-size: 64px;
+  font-size: 42px;
   font-family: var(--secondary-font);
   color: #cf8f28;
 }
 
 .banner_section h2 .more {
   font-family: var(--secondary-font);
-  font-size: 64px;
+  font-size: 42px;
   color: #337c29;
 }
 
@@ -265,6 +266,7 @@ a.btns:hover {
 }
 
 .gif1 {
+  display: none;
   width: 80px;
   height: 80px;
   object-fit: contain;
@@ -296,6 +298,11 @@ a.btns:hover {
   z-index: 3;
 }
 
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
 
 .card-content {
   text-align: center;
@@ -377,10 +384,9 @@ a.btns:hover {
 .head-content h2 {
   font-family: var(--secondary-font);
   font-size: 48px;
-  line-height: 48px;
+  line-height: 44px;
   font-weight: 600;
   color: #241e1e;
-  width: 400px;
 }
 
 .head-content p {
@@ -389,14 +395,13 @@ a.btns:hover {
   line-height: 27px;
   font-weight: 400;
   color: #241e1e;
-  width: 380px;
 }
 
 .steup-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  max-width: 920px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -453,6 +458,7 @@ a.btns:hover {
   font-family: var(--secondary-font);
   font-size: 48px;
   font-weight: bold;
+  -webkit-text-stroke: 2px white;
   color: #2d3436;
   margin-bottom: 10px;
   line-height: 1;
@@ -485,12 +491,12 @@ a.btns:hover {
 }
 
 .card3 h2 {
-  font-size: 56px;
+  font-size: 42px;
 }
 
 .card3 img[alt="reward-money"] {
   width: fit-content;
-  height: 404px;
+  height: 330px;
   object-fit: cover;
   border-radius: 20px;
   margin: 0;
@@ -538,7 +544,7 @@ a.btns:hover {
 
 .sub-text h2 {
   font-family: var(--secondary-font);
-  font-size: 48px;
+  font-size: clamp(27px, 3vw, 48px);
   font-weight: 600;
   color: #241e1e;
 }
@@ -579,20 +585,23 @@ a.btns:hover {
 .video-section .container {
   background-color: #327d2a;
   display: flex;
+  max-width: 1200px;
+  border-radius: 20px;
 }
+
 
 .video img {
   padding: 20px;
   border-radius: 35px;
   width: fit-content;
-  height: 518px;
+  height: 450px;
 }
 
 .text-content h2 {
   font-family: var(--secondary-font);
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 72px;
+  font-size: 42px;
+  font-weight:600;
+  line-height:55px;
   color: #241E1E;
 }
 
@@ -613,13 +622,15 @@ a.btns:hover {
 }
 
 .money-content {
-  padding: 30px;
+  padding-top: 70px;
   text-align: center;
   justify-content: center;
 }
 
 .money{
-  margin-bottom: -4px;
+  width: 250px;
+  margin-bottom: -101px;
+  transform: translateY(-96px);
 }
 
 .btns {
@@ -649,21 +660,25 @@ a.btns:hover {
   background-color: #241e1e;
 }
 
+
+
 .why-card {
-  border: 2px solid #241e1e;
+  border: 1px solid #241e1e;
   border-radius: 20px;
   background: #eff1d6;
   box-shadow: rgba(0, 0, 0, 9) 7.95px 6.95px 4.6px;
-  padding: 30px;
+  height: auto; 
+  width: 100%;
+  padding: 20px;
 }
 
 .why-card h3 {
   font-family: var(--secondary-font);
   font-weight: 500;
-  font-size: 28px;
+  font-size: 22px;
   letter-spacing: -3%;
   margin: 0;
-}
+} 
 
 .ready-image img{
     position: relative;
@@ -683,7 +698,7 @@ a.btns:hover {
 
 .why-card p {
     font-family: var(--primary-font);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin: 0;
@@ -697,7 +712,7 @@ a.btns:hover {
     font-family: var(--secondary-font);
     font-size: 48px;
     font-weight: 600;
-    line-height: 72px;
+    line-height: 48px;
     color: #FFFF;
 }
 
@@ -728,21 +743,23 @@ a.btns:hover {
     font-family: var(--secondary-font);
     font-size: 48px;
     font-weight: 600;
-    line-height: 48px;
+    line-height: 18px;
+    margin-top: 40px;
     color: #241E1E;
 }
 
 .money-content span{
     font-family: var(--primary-font);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
+    line-height: 15px;
     color: #241E1E;
 }
 
 .money-content p{
     font-family: var(--primary-font);
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 27px;
 }
 
@@ -777,7 +794,7 @@ a.btns:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     gap: 20px;
-    max-width: 1200px;
+    max-width: 970px;
     margin: 0 auto;
     margin-top: 90px;
 }
@@ -794,7 +811,18 @@ a.btns:hover {
   height: 287px;
 }
 
-
+.ready-card-image::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-39px);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  z-index: 1;
+}
 
 .ready-card-image{
   position: relative;
@@ -810,6 +838,10 @@ a.btns:hover {
 }
 .card-bg{
   background-color: rgba(239, 241, 214, 1);
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 .ready-card-pink{
@@ -828,6 +860,7 @@ a.btns:hover {
   position: absolute;
   bottom: 45px;
   padding: 20px;
+  z-index: 1;
 }
 
 .quizes-content h3{
@@ -1037,15 +1070,21 @@ footer li {
   border-radius: 50%;
   background-color: white;
   padding: 5px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
 .circle i {
   color: black;
+  width: 20px; 
+  height: 20px; 
+  line-height: 20px; 
+  text-align: center;
 }
 
 .grey-bg {
   background-color: rgba(255, 255, 255, 0.1);
-
   border-radius: 5px;
   padding: 5px;
   margin-top: 10px;
@@ -1110,7 +1149,7 @@ footer li {
 
 /* Burger Menu Styles */
 .burger-menu {
-    display: none; /* Hidden by default (desktop) */
+    display: none; 
     cursor: pointer;
     padding: 8px;
     border-radius: 4px;
@@ -1128,7 +1167,7 @@ footer li {
     display: block;
 }
 
-/* Desktop Navigation */
+
 .nav-bar .nav {
     display: flex;
     list-style: none;
@@ -1138,7 +1177,7 @@ footer li {
 }
 
 .nav-bar .nav li a {
-    color: #000000; /* Updated to black for visibility */
+    color: #000000; 
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
@@ -1148,7 +1187,7 @@ footer li {
     color: #007bff;
 }
 
-/* Mobile Navigation Styles */
+
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -1215,19 +1254,19 @@ footer li {
 .mobile-nav .nav li a {
     display: block;
     padding: 15px 25px;
-    color: #000000; /* Updated to black (#0000 is invalid; using #000000 for full black) */
+    color: #000000; 
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .mobile-nav .nav li a:hover {
-    color: #007bff !important; /* Ensure hover color overrides if needed */
+    color: #007bff !important; 
     background-color: #f8f9fa;
     padding-left: 35px;
 }
 
-/* Overlay */
+
 .nav-overlay {
     position: fixed;
     top: 0;
@@ -1246,19 +1285,19 @@ footer li {
     visibility: visible;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-bar .nav {
-        display: none; /* Hide desktop nav on mobile */
-    }
 
-    .burger-menu {
-        display: block !important; /* Force show on mobile */
-    }
+@media (max-width: 768px) {
+  .nav-bar .nav {
+    display: none; 
+  }
+
+  .burger-menu {
+    display: block !important; 
+  }
 }
 
 @media (max-width: 480px) {
-    .mobile-nav {
+  .mobile-nav {
         width: 100%;
         left: -100%;
     }
@@ -1268,7 +1307,7 @@ footer li {
     }
 }
 
-/* Refined Mobile Nav UL/LI Styles */
+
 #mobileNav.active .nav {
     display: block;
     visibility: visible;
@@ -1278,7 +1317,7 @@ footer li {
     margin: 0;
     padding: 20px 0;
     list-style: none;
-    background-color: #fff; /* White background */
+    background-color: #fff; 
     position: relative;
     z-index: 1002;
 }
@@ -1289,7 +1328,7 @@ footer li {
     min-height: 20px;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid #eee; /* Light border for separation */
+    border-bottom: 1px solid #eee; 
 }
 
 #mobileNav.active .nav li:last-child {
@@ -1299,9 +1338,9 @@ footer li {
 #mobileNav.active .nav li a {
     display: block;
     padding: 15px 25px;
-    color: #000000; /* Simple black text */
+    color: #000000; 
     font-size: 16px;
-    font-weight: normal; /* Reset to normal weight */
+    font-weight: normal; 
     text-decoration: none;
     background-color: transparent;
     transition: all 0.3s ease;
@@ -1310,12 +1349,12 @@ footer li {
 }
 
 #mobileNav.active .nav li a:hover {
-    color: #007bff; /* Blue hover color */
-    background-color: #f8f9fa; /* Light gray background on hover */
-    padding-left: 35px; /* Slight indent on hover */
+    color: #007bff; 
+    background-color: #f8f9fa;
+    padding-left: 35px; 
 }
 
-/* Ensure the parent mobile-nav expands */
+
 #mobileNav.active {
     left: 0;
     min-height: 100vh;
@@ -1324,12 +1363,11 @@ footer li {
 }
 
 @media (max-width: 460px) {
-    /* Mobile Nav: Full Width Sliding for Small Screens */
     .mobile-nav {
-        width: 100% !important; /* Full screen width at 460px and below */
-        max-width: 100% !important; /* Prevent exceeding screen */
-        left: -100% !important; /* Slide from right edge */
-        box-sizing: border-box !important; /* Include padding/borders in width */
+        width: 100% !important; 
+        max-width: 100% !important; 
+        left: -100% !important; 
+        box-sizing: border-box !important; 
     }
 
     .mobile-nav.active {
@@ -1337,61 +1375,60 @@ footer li {
         max-width: 100% !important; /* Lock to screen width */
     }
 
-    /* Adjust Header for Small Screens */
+   
     .mobile-nav-header {
-        padding: 15px !important; /* Reduced padding */
-        box-sizing: border-box !important; /* Include padding in layout */
+        padding: 15px !important; 
+        box-sizing: border-box !important; 
     }
 
     .mobile-nav-header .logo img {
-        height: 28px !important; /* Smaller logo on very small screens */
+        height: 28px !important; 
     }
 
     .close-btn {
-        font-size: 24px !important; /* Slightly smaller close button */
-    }
-
-    /* Nav List Adjustments for Small Screens */
-    .mobile-nav .nav {
-        padding: 10px 0 !important; /* Less top/bottom padding */
-        box-sizing: border-box !important; /* Prevent padding from adding width */
+        font-size: 24px !important; 
+        
+        .mobile-nav .nav {
+        padding: 10px 0 !important; 
+        box-sizing: border-box !important; 
     }
 
     .mobile-nav .nav li a {
-        padding: 12px 15px !important; /* Reduced side padding for full-width fit */
-        font-size: 15px !important; /* Slightly smaller font to fit */
-        box-sizing: border-box !important; /* Ensure padding doesn't expand */
+        padding: 12px 15px !important; 
+        font-size: 15px !important; 
+        box-sizing: border-box !important; 
     }
 
     .mobile-nav .nav li a:hover {
-        padding-left: 25px !important; /* Adjusted hover indent */
+        padding-left: 25px !important; 
     }
 
-    /* Prevent Overflow and Ensure Touch-Friendly */
+  
     .mobile-nav {
-        overflow-x: hidden !important; /* No horizontal scroll */
-        overflow-y: auto !important; /* Allow vertical scroll if content overflows */
+        overflow-x: hidden !important; 
+        overflow-y: auto !important;
     }
 
-    /* Default Mobile Nav Width Above 460px */
+   
     .mobile-nav {
-        width: 280px !important; /* Default width */
-        max-width: 280px !important; /* Cap the width */
-        transition: left 0.3s ease !important; /* Smooth slide */
+        width: 280px !important; 
+        max-width: 280px !important; 
+        transition: left 0.3s ease !important;
     }
 
     body {
-        margin: 0 !important; /* Reset body margins if needed */
+        margin: 0 !important; 
     }
 
-    /* Burger Menu Icon on Very Small Screens */
+
     .burger-menu {
-        padding: 5px !important; /* Smaller touch target if needed */
-        box-sizing: border-box !important; /* Include padding in size */
+        padding: 5px !important; 
+        box-sizing: border-box !important;
     }
 
     .burger-menu img {
         width: 20px !important;
         height: 20px !important;
     }
+}
 }
